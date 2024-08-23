@@ -1,0 +1,41 @@
+{
+  "name": "auth-app",
+  "version": "1.0.0",
+  "description": "node.js app for authentication and authorization",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config --experimental-json-modules build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "build": "tsc -p .",
+    "test": "node -r dotenv/config --experimental-json-modules build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.7",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^22.1.0",
+    "@types/react": "^18.3.4",
+    "prettier": "^3.3.3",
+    "tsc": "^2.0.4",
+    "tsc-watch": "^6.2.0"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.0.22",
+    "bcrypt-ts": "^5.0.2",
+    "cloudinary": "^2.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.3.1",
+    "resend": "^4.0.0"
+  }
+}
